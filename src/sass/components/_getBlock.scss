@@ -1,0 +1,72 @@
+.getBlock {
+  &-bg {
+    background-color: $background-color;
+  }
+  &-wrapper {
+    padding-top: 140px;
+  }
+  &-header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: $primary-text-color;
+    margin-bottom: 50px;
+  }
+  &-list {
+    max-width: 328px;
+    margin: 0 auto 50px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      max-width: 704px;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 904px;
+    }
+  }
+  &-list-item {
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &-list-item:nth-child(odd) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+    }
+  }
+
+  &-list-item:nth-child(even) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+    }
+  }
+
+  &-list-item:nth-child(3n) {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 29px;
+    }
+  }
+  &-list-item:not(:nth-child(3n)) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 29px;
+    }
+  }
+
+  &-list-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}

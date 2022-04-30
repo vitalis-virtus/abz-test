@@ -1,9 +1,18 @@
 import "./sass/main.scss";
 
+//components
+import Header from "./components/Header";
+import MainHero from "./components/MainHero";
+import GetBlock from "./components/GetBlock";
+import PostBlock from "./components/PostBlock";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
+    <div>
+      <Header />
+      <MainHero />
+      <GetBlock />
+      <PostBlock />
     </div>
   );
 }

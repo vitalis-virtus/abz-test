@@ -1,0 +1,21 @@
+.header {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: space-between;
+    }
+  }
+  &-logo {
+    margin-right: 14px;
+  }
+  &-nav {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

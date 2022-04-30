@@ -1,8 +1,22 @@
-// Хелперы
+//font
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+//helpers
 @import "./utils/_variables";
 @import "./utils/_mixins";
 @import "./utils/_placeholders";
 
-//базовый
+//containers
+@import "./utils/containers";
+
+//base
 @import "./utils/_base-noralize";
 
+//components
+@import "./components/header";
+@import "./components/button";
+@import "./components/mainHero";
+@import "./components/getBlock";
+@import "./components/userCard";
+@import "./components/postBlock";
+@import "./components/postForm";
